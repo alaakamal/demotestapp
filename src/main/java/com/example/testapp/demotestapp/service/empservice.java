@@ -22,9 +22,8 @@ public class empservice implements empserviceint {
         return empRepository.findAll();
     }
 
-    @Override
-    public Optional<emp> getEmployeeById(int employeeId) {
-        return empRepository.findById((long) employeeId);
+    public Optional<emp> getEmployeeById(Long id) {
+        return empRepository.findById(id);
 
     }
 
@@ -33,8 +32,7 @@ public class empservice implements empserviceint {
         return empRepository.save(employee);
     }
 
-    @Override
-    public emp updateEmployee(int employeeId, emp employee) {
+    public emp updateEmployee(Long id, emp employee) {
         return empRepository.save(employee);
     }
 

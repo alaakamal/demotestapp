@@ -8,11 +8,11 @@ import com.example.testapp.demotestapp.entity.emp;
 public interface empserviceint {
     List<emp> getAllEmployees();
 
-    Optional<emp> getEmployeeById(int employeeId);
+    public Optional<emp> getEmployeeById(Long id);
 
     emp createEmployee(emp employee);
 
-    emp updateEmployee(int employeeId, emp employee);
-
     void deleteEmployee(int employeeId);
+
+    emp updateEmployee(Long id, emp employee);
 }

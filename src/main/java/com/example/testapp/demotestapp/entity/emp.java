@@ -1,5 +1,7 @@
 package com.example.testapp.demotestapp.entity;
 
+import java.time.LocalDate;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -25,7 +27,7 @@ public class emp {
     private String phoneNumber;
 
     @Column(name = "HIRE_DATE")
-    private String hireDate;
+    private LocalDate hireDate;
 
     @Column(name = "JOB_ID")
     private String jobId;
@@ -82,11 +84,11 @@ public class emp {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getHireDate() {
+    public LocalDate getHireDate() {
         return hireDate;
     }
 
-    public void setHireDate(String hireDate) {
+    public void setHireDate(LocalDate hireDate) {
         this.hireDate = hireDate;
     }
 
