@@ -38,7 +38,7 @@ public class empcontroller {
                 });
     }
 
-    @GetMapping("/getbydeptid/{depid}")
+    @GetMapping("/getbydeptid/{deptid}")
     public List<emp> getdept(@PathVariable Long deptid) {
         return empService.findByDeptId(deptid);
     }

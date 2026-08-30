@@ -43,7 +43,7 @@ public class empservice implements empserviceint {
 
     @Override
     public List<emp> findByDeptId(Long deptId) {
-        return empRepository.findByDeptId(deptId);
+        return empRepository.findByDepartmentId(deptId);
     }
 
 }
