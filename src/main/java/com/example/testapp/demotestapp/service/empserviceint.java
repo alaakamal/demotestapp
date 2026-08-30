@@ -15,4 +15,6 @@ public interface empserviceint {
     void deleteEmployee(int employeeId);
 
     emp updateEmployee(Long id, emp employee);
+
+    List<emp> findByDeptId(Long deptId);
 }

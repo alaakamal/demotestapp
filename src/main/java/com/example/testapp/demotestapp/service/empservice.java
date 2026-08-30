@@ -41,4 +41,9 @@ public class empservice implements empserviceint {
         empRepository.deleteById((long) employeeId);
     }
 
+    @Override
+    public List<emp> findByDeptId(Long deptId) {
+        return empRepository.findByDeptId(deptId);
+    }
+
 }

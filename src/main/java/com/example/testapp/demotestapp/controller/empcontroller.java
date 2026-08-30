@@ -38,6 +38,11 @@ public class empcontroller {
                 });
     }
 
+    @GetMapping("/getbydeptid/{depid}")
+    public List<emp> getdept(@PathVariable Long deptid) {
+        return empService.findByDeptId(deptid);
+    }
+
     @PutMapping("/updateempbyid/{id}")
     public emp postMethodName(@PathVariable Long id,
             @RequestBody emp employee) {
