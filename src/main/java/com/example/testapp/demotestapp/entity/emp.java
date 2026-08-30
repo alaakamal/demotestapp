@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 public class emp {
     @Id
     @Column(name = "EMPLOYEE_ID")
-    private int employeeId;
+    private Long employeeId;
 
     @Column(name = "FIRST_NAME")
     private String firstName;
@@ -44,11 +44,11 @@ public class emp {
     @Column(name = "DEPARTMENT_ID")
     private int departmentId;
 
-    public int getEmployeeId() {
+    public Long getEmployeeId() {
         return employeeId;
     }
 
-    public void setEmployeeId(int employeeId) {
+    public void setEmployeeId(Long employeeId) {
         this.employeeId = employeeId;
     }
 
